@@ -55,17 +55,3 @@ else:
 
     print(results[result])
 
-def reverse(f1,f2):
-  s = Stack()
-  fh1 = open(f1, 'r')
-  for i in fh1:
-    x = i.rstrip('\n')
-    s.push(x)
-  fh1.close()
- 
-  fh2 = open(f2, 'w')
-  while not s.is_empty():
-    y = s.pop()
-    fh2.write(y + '\n')
-  fh2.close()
-
